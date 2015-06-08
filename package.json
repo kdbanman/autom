@@ -1,0 +1,19 @@
+{
+  "name": "autom",
+  "version": "0.0.1",
+  "description": "3 state cellular automata plaything for the public",
+  "contributors": [
+    {
+      "name": "Victoria Bobey",
+      "email": "vbobey@ualberta.ca"
+    },
+    {
+      "name": "Kirby Banman",
+      "email": "kdbanman@ualberta.ca"
+    }
+  ],
+  "dependencies": {
+    "express": "4.x",
+    "morgan": "1.x"
+  }
+}
