@@ -1,0 +1,25 @@
+{
+  "name": "autom",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kdbanman/autom",
+  "authors": [
+    "Victoria Bobey <vbobey@ualberta.ca>",
+    "Kirby Banman <kdbanman@ualberta.ca>"
+  ],
+  "description": "3 state cellular automata plaything for the public",
+  "keywords": [
+    "cellular",
+    "automata"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Processing.js": "~1.4.15"
+  }
+}
