@@ -25,3 +25,5 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
+static/components/Processing.js/.bower.json
+static/components/Processing.js/.gitignore
