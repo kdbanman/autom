@@ -4,31 +4,7 @@
   </head>
   <body>
     <script src="static/components/Processing.js/processing.js"></script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/rendering.pde">
-    </script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/rules.pde">
-    </script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/seeding.pde">
-    </script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/calculation.pde">
-    </script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/io.pde">
-    </script>
-    <script type="text/processing" 
-            data-processing-target="mycanvas"
-            src="processing/yumm.pde">
-    </script>
-    <canvas id="mycanvas"></canvas>
+    <canvas id="mycanvas" data-processing-sources="processing/rendering.pde processing/rules.pde processing/seeding.pde processing/calculation.pde processing/io.pde processing/yumm.pde"></canvas>
     <span>
     this goes beside the canvas unless it doesn't fit horizontally.
     </span>
