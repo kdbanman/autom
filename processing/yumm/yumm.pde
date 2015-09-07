@@ -8,8 +8,6 @@ int pauseCellSize = 19;
 
 int framerate = 30;
 
-boolean freezeForError = false;
-
 // cells are 0, 1, or 2
 // history is a circular buffer of habitats
 int[][] history;
@@ -31,7 +29,7 @@ boolean menuDragging;
 // (this shit only works on 64 bit machines because it takes
 // 43 bits to describe all 3 state outer totallistic 1D
 // automata)
-long initialRule = 214582522525L;
+// long initialRule = 214582522525L; "120202021212121212111200000";
 String stringInitialRule = "221221121220202201101122120";
 int[][][] nextMap;
 
@@ -57,8 +55,7 @@ void setup() {
   ruleFrequency = new int[3][3][3];
   
   nextMap = new int[3][3][3];
-  makeMap(nextMap, initialRule);
-  //makeMapBase3(nextMap, stringInitialRule);
+  makeMapBase3(nextMap, stringInitialRule);
   
   noStroke();
   background(backCol);
@@ -88,8 +85,8 @@ void mouseClicked() {
   
   if (menuButtonsClickX > pauseCellSize && menuButtonsClickX < 13*pauseCellSize &&
       menuButtonsClickY > pauseCellSize && menuButtonsClickY < 28*pauseCellSize) {
-    int k = (menuButtonsClickX - pauseCellSize) / (pauseCellSize * 4);
-    int j = ((menuButtonsClickY - pauseCellSize) / (pauseCellSize * 3)) % 3;
+    int k = int((menuButtonsClickX - pauseCellSize) / (pauseCellSize * 4));
+    int j = int((menuButtonsClickY - pauseCellSize) / (pauseCellSize * 3)) % 3;
     int i = ((menuButtonsClickY - pauseCellSize) / (pauseCellSize * 9)) % 3;
     
     nextMap[i][j][k] = (nextMap[i][j][k] + 1) % 3;
